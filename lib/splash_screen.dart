@@ -58,7 +58,7 @@ class _LogoScreenState extends State<LogoScreen> with TickerProviderStateMixin {
                 child: Container(
                   width: 414.0.w,
                   child: Image(
-                    image: AssetImage('images/splash screen wave.png'),
+                    image: AssetImage('images/splash wave.png'),
                     fit: BoxFit.cover,
                   ),
 

@@ -203,7 +203,7 @@ class Validation {
                     text:
                         'Your loan application for R${loanAmountController.toUpperCase()} has been denied.'
                            ,
-                    approved: false,subText:'${status.errors!.join().toUpperCase()}, please try again');
+                    approved: false,subText:'${status.errors!.join().toUpperCase()}\nNGICELA UZAME FUTHI');
               }
 
             });
