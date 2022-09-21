@@ -1,9 +1,9 @@
-import 'package:enviro_bank/app_colors.dart';
-import 'package:enviro_bank/text_dimensions.dart';
+import 'package:envirobank/app_colors.dart';
+import 'package:envirobank/text_dimensions.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:jumping_dot/jumping_dot.dart';
+
 
 class CustomDialogue {
   static CustomDialogue _instance = new CustomDialogue.internal();
@@ -37,7 +37,7 @@ class CustomDialogue {
                     child: approved?
                     Image(image:
                     AssetImage("images/help.png")
-                      ,):   JumpingDots(color: AppColors.darkBlue,)
+                      ,):   Container()
                 ),
                 SizedBox(height: 18.h,),
                 Text(text,style: TextDimensions.style16InterW700AlertBoxBlack,

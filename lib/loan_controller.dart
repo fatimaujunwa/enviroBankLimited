@@ -1,8 +1,8 @@
 import 'dart:convert';
 
-import 'package:enviro_bank/loan_application_model.dart';
-import 'package:enviro_bank/loan_application_response.dart';
-import 'package:enviro_bank/loan_repo.dart';
+import 'package:envirobank/loan_application_model.dart';
+import 'package:envirobank/loan_application_response.dart';
+import 'package:envirobank/loan_repo.dart';
 import 'package:get/get_connect/http/src/response/response.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_disposable.dart';
 import 'package:get/get_state_manager/src/simple/get_controllers.dart';

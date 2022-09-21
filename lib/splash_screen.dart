@@ -1,8 +1,8 @@
 import 'dart:async';
 
-import 'package:enviro_bank/app_colors.dart';
-import 'package:enviro_bank/route_helper.dart';
-import 'package:enviro_bank/text_dimensions.dart';
+import 'package:envirobank/app_colors.dart';
+import 'package:envirobank/route_helper.dart';
+import 'package:envirobank/text_dimensions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';

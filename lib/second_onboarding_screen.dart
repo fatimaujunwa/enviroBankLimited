@@ -1,5 +1,5 @@
-import 'package:enviro_bank/onboarding_screen_template.dart';
-import 'package:enviro_bank/route_helper.dart';
+import 'package:envirobank/onboarding_screen_template.dart';
+import 'package:envirobank/route_helper.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';

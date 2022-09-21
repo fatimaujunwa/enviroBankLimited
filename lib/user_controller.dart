@@ -1,9 +1,9 @@
 import 'dart:convert';
 
-import 'package:enviro_bank/token_model.dart';
-import 'package:enviro_bank/user_model.dart';
-import 'package:enviro_bank/user_repo.dart';
-import 'package:enviro_bank/validation_response_model.dart';
+import 'package:envirobank/token_model.dart';
+import 'package:envirobank/user_model.dart';
+import 'package:envirobank/user_repo.dart';
+import 'package:envirobank/validation_response_model.dart';
 import 'package:get/get.dart';
 import 'package:get/get_connect/http/src/response/response.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_disposable.dart';

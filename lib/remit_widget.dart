@@ -1,5 +1,5 @@
-import 'package:enviro_bank/loan_controller.dart';
-import 'package:enviro_bank/text_dimensions.dart';
+import 'package:envirobank/loan_controller.dart';
+import 'package:envirobank/text_dimensions.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

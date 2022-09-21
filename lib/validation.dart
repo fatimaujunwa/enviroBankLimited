@@ -1,11 +1,12 @@
 import 'dart:convert';
 
-import 'package:enviro_bank/custome_dialogue_box_two.dart';
-import 'package:enviro_bank/loan_application_model.dart';
-import 'package:enviro_bank/loan_model.dart';
-import 'package:enviro_bank/route_helper.dart';
-import 'package:enviro_bank/user_controller.dart';
-import 'package:enviro_bank/user_model.dart';
+import 'package:envirobank/custome_dialogue_box_two.dart';
+import 'package:envirobank/loan_application_model.dart';
+import 'package:envirobank/loan_model.dart';
+import 'package:envirobank/route_helper.dart';
+import 'package:envirobank/user_controller.dart';
+import 'package:envirobank/user_model.dart';
+import 'package:envirobank/user_controller.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';

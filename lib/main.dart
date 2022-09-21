@@ -1,26 +1,15 @@
 
-import 'package:enviro_bank/first_onboarding_screen.dart';
-import 'package:enviro_bank/home_screen.dart';
-import 'package:enviro_bank/loan_controller.dart';
-import 'package:enviro_bank/loan_form_screen.dart';
-import 'package:enviro_bank/onboarding_screen_template.dart';
-import 'package:enviro_bank/route_helper.dart';
-import 'package:enviro_bank/second_onboarding_screen.dart';
-import 'package:enviro_bank/sign_in_screen.dart';
-import 'package:enviro_bank/sign_in_sign_out_screen_template.dart';
-import 'package:enviro_bank/sign_up_screen.dart';
-import 'package:enviro_bank/splash_screen.dart';
-import 'package:enviro_bank/tab_bar_widget.dart';
-import 'package:enviro_bank/test.dart';
-import 'package:enviro_bank/user_controller.dart';
+import 'package:envirobank/route_helper.dart';
 import 'package:flutter/material.dart';
-import 'package:enviro_bank/dependencies.dart' as dep;
+import 'package:envirobank/dependencies.dart' as dep;
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart'
 ;
+
+import 'loan_controller.dart';
 
 
 

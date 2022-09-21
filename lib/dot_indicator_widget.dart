@@ -1,4 +1,4 @@
-import 'package:enviro_bank/app_colors.dart';
+import 'package:envirobank/app_colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';

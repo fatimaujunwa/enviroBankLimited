@@ -1,5 +1,5 @@
-import 'package:enviro_bank/custom_snackbar.dart';
-import 'package:enviro_bank/loan_controller.dart';
+import 'package:envirobank/custom_snackbar.dart';
+import 'package:envirobank/loan_controller.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_paystack/flutter_paystack.dart';
 import 'package:get/get.dart';

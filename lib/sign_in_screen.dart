@@ -1,6 +1,6 @@
-import 'package:enviro_bank/route_helper.dart';
-import 'package:enviro_bank/sign_in_sign_out_screen_template.dart';
-import 'package:enviro_bank/validation.dart';
+import 'package:envirobank/route_helper.dart';
+import 'package:envirobank/sign_in_sign_out_screen_template.dart';
+import 'package:envirobank/validation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

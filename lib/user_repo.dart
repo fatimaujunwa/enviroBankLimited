@@ -1,4 +1,4 @@
-import 'package:enviro_bank/user_model.dart';
+import 'package:envirobank/user_model.dart';
 import 'package:get/get_connect/http/src/response/response.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

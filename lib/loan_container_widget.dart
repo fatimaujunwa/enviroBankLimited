@@ -1,9 +1,9 @@
-import 'package:enviro_bank/blue_container.dart';
-import 'package:enviro_bank/loan_controller.dart';
-import 'package:enviro_bank/payment.dart';
-import 'package:enviro_bank/remit_widget.dart';
-import 'package:enviro_bank/remitted_widget.dart';
-import 'package:enviro_bank/text_dimensions.dart';
+import 'package:envirobank/blue_container.dart';
+import 'package:envirobank/loan_controller.dart';
+import 'package:envirobank/payment.dart';
+import 'package:envirobank/remit_widget.dart';
+import 'package:envirobank/remitted_widget.dart';
+import 'package:envirobank/text_dimensions.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

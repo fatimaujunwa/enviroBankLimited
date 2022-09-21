@@ -1,7 +1,7 @@
-import 'package:enviro_bank/app_colors.dart';
-import 'package:enviro_bank/blue_container.dart';
-import 'package:enviro_bank/dot_indicator_widget.dart';
-import 'package:enviro_bank/text_dimensions.dart';
+import 'package:envirobank/app_colors.dart';
+import 'package:envirobank/blue_container.dart';
+
+import 'package:envirobank/text_dimensions.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

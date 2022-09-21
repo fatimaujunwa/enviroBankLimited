@@ -1,4 +1,4 @@
-import 'package:enviro_bank/app_colors.dart';
+import 'package:envirobank/app_colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

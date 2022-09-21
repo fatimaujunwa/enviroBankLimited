@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'dart:ffi';
 
-import 'package:enviro_bank/api_client.dart';
-import 'package:enviro_bank/loan_application_model.dart';
+import 'package:envirobank/api_client.dart';
+import 'package:envirobank/loan_application_model.dart';
 import 'package:get/get_connect/http/src/response/response.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

@@ -1,7 +1,7 @@
 
 
-import 'package:enviro_bank/user_controller.dart';
-import 'package:enviro_bank/user_repo.dart';
+import 'package:envirobank/user_controller.dart';
+import 'package:envirobank/user_repo.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:shared_preferences/shared_preferences.dart';

@@ -1,7 +1,7 @@
-import 'package:enviro_bank/blue_container.dart';
-import 'package:enviro_bank/route_helper.dart';
-import 'package:enviro_bank/tab_bar_widget.dart';
-import 'package:enviro_bank/text_dimensions.dart';
+import 'package:envirobank/blue_container.dart';
+import 'package:envirobank/route_helper.dart';
+import 'package:envirobank/tab_bar_widget.dart';
+import 'package:envirobank/text_dimensions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
