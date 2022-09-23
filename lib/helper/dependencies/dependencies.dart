@@ -1,16 +1,17 @@
 
 
-import 'package:envirobank/user_controller.dart';
-import 'package:envirobank/user_repo.dart';
+
+
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'api_client.dart';
-import 'app_constants.dart';
-
-import 'loan_controller.dart';
-import 'loan_repo.dart';
+import '../../controllers/loan_controller.dart';
+import '../../controllers/user_controller.dart';
+import '../../data/api/api_client.dart';
+import '../../data/repository/loan_repo.dart';
+import '../../data/repository/user_repo.dart';
+import '../../utils/app_constants.dart';
 
 Future<void>init(
     )async{

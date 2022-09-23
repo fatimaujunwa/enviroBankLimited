@@ -115,9 +115,12 @@ RemittedWidget()
                               .getLoanHistory()[widget.index]
                               .reference!,
                           onPressed: () async {
-                           Payment payment= await Payment(ctx: context, price: int.parse(widget.controller.getLoanHistory()[widget.index].amount!), email: widget.userEmail).chargeCard(widget.controller,widget.index);
-                            print('card response'+payment.toString());
-                            // CustomDialogue.showCustomDialog(context, okBtnFunction: () async {
+    CustomDialogue.showCustomDialog(context, okBtnFunction: () async {
+      Payment payment= await Payment(ctx: context, price: int.parse(widget.controller.getLoanHistory()[widget.index].amount!), email: widget.userEmail).chargeCard(widget.controller,widget.index);
+      print('card response'+payment.toString());
+    }
+
+
                             //
                             //
                             //   // if(payment.cardResponse==true){

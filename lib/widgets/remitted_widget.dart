@@ -1,8 +1,10 @@
-import 'package:envirobank/text_dimensions.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'app_colors.dart';
+import '../utils/app_colors.dart';
+
+
 
 class RemittedWidget extends StatelessWidget {
   const RemittedWidget({Key? key}) : super(key: key);
