@@ -1,4 +1,4 @@
-import 'package:envirobank/text_dimensions.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -6,9 +6,12 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:intl/intl.dart';
 
-import 'app_colors.dart';
+
+import '../../controllers/loan_controller.dart';
+import '../../utils/app_colors.dart';
+import '../../utils/text_dimensions.dart';
 import 'loan_container_widget.dart';
-import 'loan_controller.dart';
+
 
 class CustomTabBar extends StatefulWidget {
   const CustomTabBar(

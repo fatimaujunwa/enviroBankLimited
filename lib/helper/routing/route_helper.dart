@@ -1,15 +1,16 @@
-import 'package:envirobank/first_onboarding_screen.dart';
-import 'package:envirobank/home_screen.dart';
-import 'package:envirobank/loan_form_screen.dart';
-import 'package:envirobank/second_onboarding_screen.dart';
-import 'package:envirobank/sign_in_screen.dart';
-import 'package:envirobank/sign_up_screen.dart';
-import 'package:envirobank/splash_screen.dart';
-import 'package:envirobank/test.dart';
+
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
 import 'package:get/get_navigation/src/routes/transitions_type.dart';
+
+import '../../pages/authentication/sign_in_screen.dart';
+import '../../pages/authentication/sign_up_screen.dart';
+import '../../pages/home/home_screen.dart';
+import '../../pages/loan /loan_form_screen.dart';
+import '../../pages/onboarding/first_onboarding_screen.dart';
+import '../../pages/onboarding/second_onboarding_screen.dart';
+import '../../pages/splash page/splash_screen.dart';
 
 class RouteHelper{
   static const String initial="/";
@@ -94,13 +95,13 @@ transitionDuration:Duration(seconds: 1)
 
     ),
     //
-    GetPage(name:test, page: (){
-      return Test();
-    },
-        transitionDuration:Duration(seconds: 1)
-
-
-    ),
+    // GetPage(name:test, page: (){
+    //   return Test();
+    // },
+    //     transitionDuration:Duration(seconds: 1)
+    //
+    //
+    // ),
     //
     //
     GetPage(name: firstOnBoarding, page: (){

@@ -1,13 +1,15 @@
 import 'dart:convert';
 
-import 'package:envirobank/token_model.dart';
-import 'package:envirobank/user_model.dart';
-import 'package:envirobank/user_repo.dart';
-import 'package:envirobank/validation_response_model.dart';
+
 import 'package:get/get.dart';
 import 'package:get/get_connect/http/src/response/response.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_disposable.dart';
 import 'package:get/get_state_manager/src/simple/get_controllers.dart';
+
+import '../data/repository/user_repo.dart';
+import '../models/token_model.dart';
+import '../models/user_model.dart';
+import '../models/validation_response_model.dart';
 
 //UserController acts as the interface between UserRepo and the Screens
 class UserController extends GetxController implements GetxService {

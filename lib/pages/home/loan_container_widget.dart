@@ -1,16 +1,18 @@
-import 'package:envirobank/blue_container.dart';
-import 'package:envirobank/loan_controller.dart';
-import 'package:envirobank/payment.dart';
-import 'package:envirobank/remit_widget.dart';
-import 'package:envirobank/remitted_widget.dart';
-import 'package:envirobank/text_dimensions.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl/intl.dart';
 
-import 'app_colors.dart';
-import 'custome_dialogue_box_two.dart';
+import '../../controllers/loan_controller.dart';
+import '../../helper/logic/payment.dart';
+import '../../utils/app_colors.dart';
+import '../../utils/text_dimensions.dart';
+import '../../widgets/custome_dialogue_box_two.dart';
+import '../../widgets/remit_widget.dart';
+import '../../widgets/remitted_widget.dart';
+
+
 
 class LoanContainerWidget extends StatefulWidget {
   const LoanContainerWidget(
@@ -117,20 +119,21 @@ RemittedWidget()
                           onPressed: () async {
     CustomDialogue.showCustomDialog(context, okBtnFunction: () async {
       Payment payment= await Payment(ctx: context, price: int.parse(widget.controller.getLoanHistory()[widget.index].amount!), email: widget.userEmail).chargeCard(widget.controller,widget.index);
-      print('card response'+payment.toString());
-    }
+
+
+    },text: 'Are you sure you would like to remit your loan of R${widget.controller
+        .getLoanHistory()[widget.index]
+        .amount!} with reference number ${widget.controller
+        .getLoanHistory()[widget.index]
+        .reference!.toUpperCase()}?');
 
 
                             //
                             //
                             //   // if(payment.cardResponse==true){
                             //   //   widget.controller.addToRemitItems(
-                            //   //       widget.controller
-                            //   //           .getLoanHistory()[widget.index]
-                            //   //           .reference!,
-                            //   //       widget.controller
-                            //   //           .getLoanHistory()[widget.index]
-                            //   //           .amount!,
+
+
                             //   //       widget.controller
                             //   //           .getLoanHistory()[widget.index]
                             //   //           .time!,

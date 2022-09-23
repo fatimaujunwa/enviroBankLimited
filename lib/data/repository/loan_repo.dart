@@ -1,13 +1,16 @@
 import 'dart:convert';
 import 'dart:ffi';
 
-import 'package:envirobank/api_client.dart';
-import 'package:envirobank/loan_application_model.dart';
+
 import 'package:get/get_connect/http/src/response/response.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'app_constants.dart';
-import 'loan_model.dart';
+import '../../models/loan_application_model.dart';
+import '../../models/loan_model.dart';
+import '../../utils/app_constants.dart';
+import '../api/api_client.dart';
+
+
 
 class LoanRepo {
   //shared preferences for storage

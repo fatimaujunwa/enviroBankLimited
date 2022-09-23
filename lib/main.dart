@@ -1,7 +1,7 @@
 
-import 'package:envirobank/route_helper.dart';
+
 import 'package:flutter/material.dart';
-import 'package:envirobank/dependencies.dart' as dep;
+import 'package:envirobank/helper/dependencies/dependencies.dart' as dep;
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -9,7 +9,10 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart'
 ;
 
-import 'loan_controller.dart';
+import 'controllers/loan_controller.dart';
+import 'helper/routing/route_helper.dart';
+
+
 
 
 

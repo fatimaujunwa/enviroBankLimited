@@ -1,9 +1,12 @@
-import 'package:envirobank/user_model.dart';
+
 import 'package:get/get_connect/http/src/response/response.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'api_client.dart';
-import 'app_constants.dart';
+import '../../models/user_model.dart';
+import '../../utils/app_constants.dart';
+import '../api/api_client.dart';
+
+
 
 class UserRepo{
   final ApiClient apiClient;

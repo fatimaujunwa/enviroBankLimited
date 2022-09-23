@@ -1,9 +1,11 @@
-import 'package:envirobank/blue_container.dart';
-import 'package:envirobank/text_dimensions.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import '../utils/text_dimensions.dart';
+import 'blue_container.dart';
 class DialogUtils {
   static DialogUtils _instance = new DialogUtils.internal();
 

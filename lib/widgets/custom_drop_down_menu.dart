@@ -1,10 +1,13 @@
 import 'package:dropdown_button2/dropdown_button2.dart';
-import 'package:envirobank/text_dimensions.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'app_colors.dart';
+import '../utils/app_colors.dart';
+import '../utils/text_dimensions.dart';
+
+
 
 class CustomDropDown extends StatefulWidget {
   const CustomDropDown({Key? key, required this.controller}) : super(key: key);

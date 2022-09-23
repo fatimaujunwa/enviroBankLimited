@@ -1,11 +1,14 @@
-import 'package:envirobank/custom_snackbar.dart';
-import 'package:envirobank/loan_controller.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_paystack/flutter_paystack.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
-import 'logo_container.dart';
+import '../../controllers/loan_controller.dart';
+import '../../widgets/custom_snackbar.dart';
+import '../../widgets/logo_container.dart';
+
+
 
 class Payment {
   BuildContext ctx;
@@ -72,7 +75,7 @@ class Payment {
         } else {
           showCustomSnackBar('Transaction terminated', 'tansaction message');
         }
-
+Navigator.pop(ctx);
         return value;
       });
 //       print('Response $response');

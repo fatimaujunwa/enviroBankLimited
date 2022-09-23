@@ -1,21 +1,20 @@
-import 'package:envirobank/app_colors.dart';
-import 'package:envirobank/blue_container.dart';
-import 'package:envirobank/custom_text_field.dart';
-import 'package:envirobank/route_helper.dart';
-import 'package:envirobank/text_dimensions.dart';
 
-import 'package:envirobank/validation.dart';
+import 'package:envirobank/helper/logic/validation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
-import 'custom_drop_down_menu.dart';
-import 'custome_dialogue_box_two.dart';
-import 'loan_controller.dart';
+import '../../controllers/loan_controller.dart';
+import '../../helper/routing/route_helper.dart';
+import '../../utils/app_colors.dart';
+import '../../utils/text_dimensions.dart';
+import '../../widgets/blue_container.dart';
+import '../../widgets/custom_drop_down_menu.dart';
+import '../../widgets/custom_text_field.dart';
 
-Validation validation = Validation();
 
+Validation validation =Validation();
 class LoanFormScreen extends StatelessWidget {
   const LoanFormScreen({Key? key, required this.userEmail}) : super(key: key);
   final String userEmail;

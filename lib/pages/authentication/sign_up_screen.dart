@@ -1,10 +1,12 @@
-import 'package:envirobank/route_helper.dart';
-import 'package:envirobank/sign_in_sign_out_screen_template.dart';
-import 'package:envirobank/validation.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-Validation validation=Validation();
+
+import '../../helper/routing/route_helper.dart';
+import '../../widgets/sign_in_sign_out_screen_template.dart';
+import '../loan /loan_form_screen.dart';
+
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({Key? key}) : super(key: key);
 

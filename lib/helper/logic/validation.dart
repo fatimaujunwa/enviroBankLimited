@@ -1,20 +1,20 @@
 import 'dart:convert';
 
-import 'package:envirobank/custome_dialogue_box_two.dart';
-import 'package:envirobank/loan_application_model.dart';
-import 'package:envirobank/loan_model.dart';
-import 'package:envirobank/route_helper.dart';
-import 'package:envirobank/user_controller.dart';
-import 'package:envirobank/user_model.dart';
-import 'package:envirobank/user_controller.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
+import '../../controllers/loan_controller.dart';
+import '../../controllers/user_controller.dart';
+import '../../models/loan_application_model.dart';
+import '../../models/user_model.dart';
+import '../../widgets/custom_dialogue_box.dart';
+import '../../widgets/custom_snackbar.dart';
+import '../routing/route_helper.dart';
 
-import 'custom_dialogue_box.dart';
-import 'custom_snackbar.dart';
-import 'loan_controller.dart';
+
+
 
 class Validation {
   void login(TextEditingController email, TextEditingController password) {

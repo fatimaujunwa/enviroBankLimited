@@ -1,14 +1,16 @@
-import 'package:envirobank/blue_container.dart';
-import 'package:envirobank/route_helper.dart';
-import 'package:envirobank/tab_bar_widget.dart';
-import 'package:envirobank/text_dimensions.dart';
+
+import 'package:envirobank/pages/home/tab_bar_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
-import 'app_colors.dart';
-import 'loan_controller.dart';
+import '../../controllers/loan_controller.dart';
+import '../../helper/routing/route_helper.dart';
+import '../../utils/app_colors.dart';
+import '../../utils/text_dimensions.dart';
+
+
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key, required this.userEmail}) : super(key: key);

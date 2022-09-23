@@ -1,8 +1,9 @@
-import 'package:envirobank/app_colors.dart';
-import 'package:envirobank/text_dimensions.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../utils/text_dimensions.dart';
 
 
 class CustomDialogue {
@@ -50,38 +51,42 @@ class CustomDialogue {
               ],
             ),
             actions: <Widget>[
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                GestureDetector(
-                    onTap: () => Navigator.pop(context),
+              Container(
+                margin: EdgeInsets.only(left: 27.w, right: 27.w),
+                child: Row(
 
-                    child: Container(
-                      height: 52.h,
-                      width:123.w ,
-                      child: Center(child: Text(cancelBtnText,style: TextDimensions.style18InterW500Grey,)),
+                  children: [
+                  GestureDetector(
+                      onTap: () => Navigator.pop(context),
 
-                      decoration: BoxDecoration(
-                          color: Color(0xffE0E0E0),
-                          borderRadius: BorderRadius.circular(12.r)
-                      ),
-                    )
-                ),
-                GestureDetector(
-                    onTap: okBtnFunction,
+                      child: Container(
+                        height: 52.h,
+                        width:123.w ,
+                        child: Center(child: Text(cancelBtnText,style: TextDimensions.style18InterW500Grey,)),
 
-                    child: Container(
+                        decoration: BoxDecoration(
+                            color: Color(0xffE0E0E0),
+                            borderRadius: BorderRadius.circular(12.r)
+                        ),
+                      )
+                  ),
+                  SizedBox(width: 12.w,),
+                  GestureDetector(
+                      onTap: okBtnFunction,
+
+                      child: Container(
 
           height: 52.h,width: 95.w,
-                      decoration: BoxDecoration(
+                        decoration: BoxDecoration(
           color:Color(0xff27A845),
-                          borderRadius: BorderRadius.circular(12.r)
-                      ),
+                            borderRadius: BorderRadius.circular(12.r)
+                        ),
 
-                      child: Center(child: Text(okBtnText,style: TextDimensions.style18InterW500White,)),
-                    )
-                )
-              ],)
+                        child: Center(child: Text(okBtnText,style: TextDimensions.style18InterW500White,)),
+                      )
+                  ),
+                ],),
+              )
 
             ],
           );

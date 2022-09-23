@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../utils/app_colors.dart';
+import '../utils/text_dimensions.dart';
 
 
 

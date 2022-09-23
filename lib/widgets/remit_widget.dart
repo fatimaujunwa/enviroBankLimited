@@ -1,9 +1,12 @@
-import 'package:envirobank/loan_controller.dart';
-import 'package:envirobank/text_dimensions.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'app_colors.dart';
+import '../controllers/loan_controller.dart';
+import '../utils/app_colors.dart';
+import '../utils/text_dimensions.dart';
+
+
 
 class RemitWidget extends StatelessWidget {
   const RemitWidget({

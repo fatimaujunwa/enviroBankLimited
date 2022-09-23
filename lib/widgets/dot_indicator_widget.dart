@@ -1,7 +1,9 @@
-import 'package:envirobank/app_colors.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+
+import '../utils/app_colors.dart';
 class DotIndicatorCardWidget extends StatelessWidget {
   const DotIndicatorCardWidget({
     Key? key,

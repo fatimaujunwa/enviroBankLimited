@@ -1,8 +1,11 @@
-import 'package:envirobank/text_dimensions.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'app_colors.dart';
+import '../utils/app_colors.dart';
+import '../utils/text_dimensions.dart';
+
+
 
 class BlueContainer extends StatelessWidget {
   const BlueContainer({Key? key,this.text='',this.width=0.0,this.height=0.0}) : super(key: key);

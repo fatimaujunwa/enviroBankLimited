@@ -1,9 +1,11 @@
-import 'package:envirobank/onboarding_screen_template.dart';
-import 'package:envirobank/route_helper.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
+
+import '../../helper/routing/route_helper.dart';
+import '../../widgets/onboarding_screen_template.dart';
 
 class SecondOnBoardingScreen extends StatelessWidget {
   const SecondOnBoardingScreen({Key? key}) : super(key: key);
