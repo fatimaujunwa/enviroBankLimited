@@ -107,11 +107,11 @@ addToRemit.forEach((element) {
       remits.forEach((element) {
         if(jsonEncode(elementModel)==jsonEncode(element)){
           elementModel.exist=true;
-print('element'+elementModel.toString());
+// print('element'+elementModel.toString());
         }
         else{
-          print('negative'+elementModel.toString());
-          print('negativeplus'+element.toString());
+          // print('negative'+elementModel.toString());
+          // print('negativeplus'+element.toString());
         }
         nextModel.add(elementModel);
       }
@@ -121,7 +121,7 @@ print('element'+elementModel.toString());
 nextModel.forEach((element) {
   changeModel.add(jsonEncode(element));
 });
-    print('change'+changeModel.toString());
+    // print('change'+changeModel.toString());
 
     sharedPreferences.setStringList(AppVariables.LOANHISTORY, changeModel);
   }

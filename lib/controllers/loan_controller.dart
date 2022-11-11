@@ -26,7 +26,7 @@ class LoanController extends GetxController implements GetxService {
   Map<int, LoanModel> _newLoans = {};
 
   Map<int, LoanModel> get loans => _loans;
-  Map<int, LoanModel> _remitItems = {};
+  Map<int, LoanModel>  _remitItems = {};
   Map<int, LoanModel> _loans = {};
   Map<int, bool>? _remitMap = {-1: false};
   Map<int, bool>? get remitMap => _remitMap;
@@ -132,22 +132,21 @@ class LoanController extends GetxController implements GetxService {
   Future<LoanApplicationResponse> loanApplication(Loan application) async {
     _isLoading=true;
     update();
-    print('before'+_isLoading.toString());
+
     await Future.delayed(Duration(seconds: 3));
     Response response = await loanRepo.loanApplication(application);
     late Loan loanApplication;
     if (response.statusCode == 201) {
       _isLoading=false;
       update();
-      print('after'+_isLoading.toString());
+
       print(response.body);
       return LoanApplicationResponse(
           response.body["approved"], [], response.body["reference"], []);
     } else {
       _isLoading=false;
       update();
-      print(response.statusCode);
-      print(response.body);
+
 
       return LoanApplicationResponse(
           false,

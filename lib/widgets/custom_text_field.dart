@@ -43,7 +43,8 @@ class _CustomTextFieldState extends State<CustomTextField> {
           borderRadius: new BorderRadius.circular(12.r),
         ),
 
-        child: TextField(
+        child:
+        TextField(
           style: TextDimensions.style14InterW400Grey,
           controller: widget.controller,
           obscureText:visibility ? true : false,
@@ -75,6 +76,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
           maxLines: 1,
           maxLength: 20,
           // controller: _locationNameTextController,
-        ));
+        )
+      );
   }
 }

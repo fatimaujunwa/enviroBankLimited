@@ -28,7 +28,8 @@ class Validation {
         showCustomSnackBar('email field is required', 'Sign in message');
       } else if (passwordController.isEmpty) {
         showCustomSnackBar('password field is required', 'Sign in message');
-      } else {
+      }
+      else {
         if (!GetUtils.isEmail(emailController)) {
           showCustomSnackBar(
               'please input a valid email address', 'Sign in message');
