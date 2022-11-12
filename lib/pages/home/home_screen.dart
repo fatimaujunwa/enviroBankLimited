@@ -69,6 +69,7 @@ class _HomeScreenState extends State<HomeScreen>
                       height: 75.h,
                     ),
                     Container(
+
                       margin: EdgeInsets.only(left: 32.w, right: 32.w),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,

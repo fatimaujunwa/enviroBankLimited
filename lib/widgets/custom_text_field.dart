@@ -15,6 +15,7 @@ class CustomTextField extends StatefulWidget {
       this.width=0.0,
         this.height=0.0,
        required this.controller,
+      required  this.dateTime
 
       })
       : super(key: key);
@@ -24,7 +25,8 @@ class CustomTextField extends StatefulWidget {
   final double height;
   final double width;
   final TextEditingController controller;
-  // final Function()showVisibilty;
+
+  final Function()dateTime;
 
   @override
   State<CustomTextField> createState() => _CustomTextFieldState();
@@ -45,6 +47,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
 
         child:
         TextField(
+          onTap:widget.dateTime ,
           style: TextDimensions.style14InterW400Grey,
           controller: widget.controller,
           obscureText:visibility ? true : false,

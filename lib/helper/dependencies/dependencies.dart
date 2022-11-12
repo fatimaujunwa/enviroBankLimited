@@ -2,6 +2,7 @@
 
 
 
+import 'package:envirobank/controllers/date_picker_controller.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -30,6 +31,8 @@ Future<void>init(
   //controllers
   Get.lazyPut(() => UserController( userRepo: Get.find()));
   Get.lazyPut(() => LoanController( loanRepo: Get.find()));
+  Get.lazyPut(() => DatePickerController());
+
 
 
 

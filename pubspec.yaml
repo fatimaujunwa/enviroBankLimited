@@ -42,6 +42,7 @@ dependencies:
   google_fonts:
   smooth_page_indicator:
   dropdown_button2:
+  intl:
 
   flutter_paystack:
     git:

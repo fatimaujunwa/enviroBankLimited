@@ -39,7 +39,8 @@ class _CustomTabBarState extends State<CustomTabBar> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: 495.0.h,
+        // color: Colors.red,
+        height: 515.0.h,
         child: Column(
           children: [
             // give the tab bar a height [can change hheight to preferred height]

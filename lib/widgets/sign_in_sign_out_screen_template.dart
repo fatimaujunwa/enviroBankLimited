@@ -114,7 +114,7 @@ height: 896.h,
                               hintText: 'xxx@gmail.com',
                               height: 58.h,
                               width: 350.w,
-                              controller: emailController,
+                              controller: emailController, dateTime: () {  },
 
 
                             ),
@@ -134,7 +134,7 @@ height: 896.h,
                               suffixIcon: true,
                               height: 58.h,
                               width: 350.w,
-                              controller: passwordController,
+                              controller: passwordController, dateTime: () {  },
                             ),
                             SizedBox(
                               height: 31.h,

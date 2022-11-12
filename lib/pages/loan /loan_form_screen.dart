@@ -1,9 +1,11 @@
 
+import 'package:envirobank/controllers/date_picker_controller.dart';
 import 'package:envirobank/helper/logic/validation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
+import 'package:intl/intl.dart';
 
 import '../../controllers/loan_controller.dart';
 import '../../helper/routing/route_helper.dart';
@@ -15,9 +17,24 @@ import '../../widgets/custom_text_field.dart';
 
 
 Validation validation =Validation();
-class LoanFormScreen extends StatelessWidget {
+class LoanFormScreen extends StatefulWidget {
   const LoanFormScreen({Key? key, required this.userEmail}) : super(key: key);
   final String userEmail;
+
+  @override
+  State<LoanFormScreen> createState() => _LoanFormScreenState();
+}
+
+class _LoanFormScreenState extends State<LoanFormScreen> {
+  TextEditingController collectionDate = TextEditingController();
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    collectionDate.text="";
+  }
+
   @override
   Widget build(BuildContext context) {
     TextEditingController fname = TextEditingController();
@@ -25,7 +42,7 @@ class LoanFormScreen extends StatelessWidget {
     TextEditingController bankName = TextEditingController();
     TextEditingController idNumber = TextEditingController();
     TextEditingController bankAccountNumber = TextEditingController();
-    TextEditingController collectionDate = TextEditingController();
+;
 
     TextEditingController loanAmount = TextEditingController();
     return Scaffold(
@@ -89,7 +106,7 @@ class LoanFormScreen extends StatelessWidget {
                                           hintText: 'John',
                                           height: 52.h,
                                           width: 171.w,
-                                          controller: fname,
+                                          controller: fname, dateTime: () {  },
                                         ),
                                       ],
                                     ),
@@ -109,7 +126,7 @@ class LoanFormScreen extends StatelessWidget {
                                           hintText: 'Doe',
                                           height: 52.h,
                                           width: 171.w,
-                                          controller: lname,
+                                          controller: lname, dateTime: () {  },
                                         ),
                                       ],
                                     ),
@@ -133,7 +150,7 @@ class LoanFormScreen extends StatelessWidget {
                                     hintText: 'xxxxxxxxx',
                                     height: 52.h,
                                     width: 350.w,
-                                    controller: idNumber,
+                                    controller: idNumber, dateTime: () {  },
                                   ),
                                 ],
                               ),
@@ -154,7 +171,7 @@ class LoanFormScreen extends StatelessWidget {
                                     hintText: '1234567890',
                                     height: 52.h,
                                     width: 350.w,
-                                    controller: bankAccountNumber,
+                                    controller: bankAccountNumber, dateTime: () {  },
                                   ),
                                 ],
                               ),
@@ -180,10 +197,14 @@ class LoanFormScreen extends StatelessWidget {
                                     height: 8.h,
                                   ),
                                   CustomTextField(
-                                    hintText: 'DD-MM-YY',
+                                    hintText: 'YYYY-MM-DD',
                                     height: 52.h,
                                     width: 350.w,
-                                    controller: collectionDate,
+                                    controller: collectionDate, dateTime: () async {
+
+   Get.find<DatePickerController>().datePicker(collectionDate, context);
+
+                                  },
                                   ),
                                 ],
                               ),
@@ -208,7 +229,7 @@ class LoanFormScreen extends StatelessWidget {
                                     hintText: '0.00',
                                     height: 52.h,
                                     width: 350.w,
-                                    controller: loanAmount,
+                                    controller: loanAmount, dateTime: () {  },
                                   ),
                                 ],
                               ),
@@ -220,7 +241,7 @@ class LoanFormScreen extends StatelessWidget {
                                 children: [
                                   GestureDetector(
                                     onTap: (){
-                                      Get.toNamed(RouteHelper.getHomeScreen(userEmail));
+                                      Get.toNamed(RouteHelper.getHomeScreen(widget.userEmail));
                                     },
                                     child: Container(
                                       height: 52.h,
